@@ -1,1 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00579d, #A5CC82);
+    color: #ffff76;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.calculator h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    font-size: 50px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.input-box {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 40px 20px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box input {
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.input-box button {
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-box button:hover {
+    background-color: #d6bb1f;
+}
+
+#result {
+    font: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+#result span {
+    color: #000000;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .calculator {
+        margin: 20% auto;
+    }
+
+    .calculator h1 {
+        font-size: 40px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .input-box input {
+        margin-bottom: 20px;
+    }
+
+    .input-box button {
+        width: 100%;
+    }
+}
 
