@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-.calculator h1 {
+.calculator h1 {  
     overflow: hidden;
     white-space: nowrap;
     width: 0;
@@ -100,6 +100,17 @@
 
 #result span {
     color: #000000;
+}
+
+.footer
+{
+    margin-top: auto;
+    background: linear-gradient(135deg, #00579d, #A5CC82);
+    color: #ffff76;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
 }
 
 
