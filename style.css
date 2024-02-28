@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
+/* 
 .navbar {
     width: 100%;
 }
@@ -18,14 +18,14 @@
 .logo {
     width: 50px;
     height: 50px;
-}
+} */
 
 
 
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #00579d, #A5CC82);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     color: #ffff76;
     padding: 10px;
     display: flex;
@@ -90,28 +90,32 @@
 }
 
 .input-box button:hover {
-    background-color: #d6bb1f;
+    background-color: #000000;
+    color: white;
 }
 
 #result {
     font: 20px;
     text-align: center;
-    color: #000000;
+    color: #ffff76;
 }
 
 #result span {
-    color: #000000;
+    color: #ffff76;
 }
 
 .footer
 {
     margin-top: auto;
-    background: linear-gradient(135deg, #00579d, #A5CC82);
-    color: #ffff76;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;
+}
+
+.footer a{
+    color: #ffffff;
 }
 
 
